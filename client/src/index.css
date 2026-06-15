@@ -1,0 +1,203 @@
+/* ===== GLOBAL STYLES ===== */
+:root {
+  --primary: #1a3a6b;
+  --primary-light: #2a5298;
+  --accent: #e8a020;
+  --accent-dark: #c68a10;
+  --text-dark: #1a1a2e;
+  --text-muted: #6c757d;
+  --bg-light: #f4f6fa;
+  --bg-white: #ffffff;
+  --border: #dee2e6;
+  --shadow: 0 4px 20px rgba(26, 58, 107, 0.12);
+  --shadow-hover: 0 8px 32px rgba(26, 58, 107, 0.22);
+  --radius: 12px;
+  --transition: 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+  line-height: 1.6;
+  margin: 0;
+}
+
+a {
+  color: var(--primary-light);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-dark);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--primary-light));
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary-custom {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all var(--transition);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-primary-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  color: white;
+  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+}
+
+.btn-accent-custom {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: white;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all var(--transition);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-accent-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(232, 160, 32, 0.4);
+  color: white;
+}
+
+/* ===== CARDS ===== */
+.card-custom {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: all var(--transition);
+  overflow: hidden;
+  background: var(--bg-white);
+}
+
+.card-custom:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ===== SPINNER ===== */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.spinner-border-custom {
+  width: 3rem;
+  height: 3rem;
+  color: var(--primary);
+}
+
+/* ===== BADGE ===== */
+.badge-category {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: white;
+  padding: 3rem 0 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+}
+
+.page-header h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.page-header p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.1rem;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+}
