@@ -19,10 +19,10 @@ const Footer = () => {
                 фахівців у галузі IT та комп'ютерних наук з 1960 року.
               </p>
               <div className="social-links">
-                <a href="#" title="Facebook" aria-label="Facebook">f</a>
-                <a href="#" title="Instagram" aria-label="Instagram">in</a>
-                <a href="#" title="YouTube" aria-label="YouTube">▶</a>
-                <a href="#" title="Telegram" aria-label="Telegram">✈</a>
+                <a href="/" title="Facebook" aria-label="Facebook">f</a>
+                <a href="/" title="Instagram" aria-label="Instagram">in</a>
+                <a href="/" title="YouTube" aria-label="YouTube">▶</a>
+                <a href="/" title="Telegram" aria-label="Telegram">✈</a>
               </div>
             </div>
 
@@ -42,11 +42,11 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6">
               <h5 className="footer-heading">Студентам</h5>
               <ul className="footer-links">
-                <li><a href="#">Розклад занять</a></li>
-                <li><a href="#">Електронний деканат</a></li>
-                <li><a href="#">Бібліотека</a></li>
-                <li><a href="#">Студентський портал</a></li>
-                <li><a href="#">Спортивний клуб</a></li>
+                <li><a href="/">Розклад занять</a></li>
+                <li><a href="/">Електронний деканат</a></li>
+                <li><a href="/">Бібліотека</a></li>
+                <li><a href="/">Студентський портал</a></li>
+                <li><a href="/">Спортивний клуб</a></li>
               </ul>
             </div>
 
